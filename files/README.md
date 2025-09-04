@@ -10,9 +10,9 @@ Surface a small, high-quality, daily set of Instagram posts from specific hashta
 
 - **Discovers** relevant Instagram posts via hashtag searches using Meta's Graph API
 - **Scores & filters** posts based on engagement, relevance, and freshness
-- **Generates** AI-powered comment suggestions for each high-quality post
-- **Delivers** curated posts to Telegram/Slack for quick human review
-- **Tracks** engagement activities without any automation violations
+- **Generates** AI-powered comment suggestions for each high-quality post (this should be left out of the MVP)
+- **Delivers** curated posts to Telegram/Slack for quick human review - 
+- **Tracks** engagement activities without any automation violations - (this should be left out of the MVP)
 
 ## 🚫 What This Project Doesn't Do
 
