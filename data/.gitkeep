@@ -1,0 +1,3 @@
+# Keep empty - files in this directory store processed posts and logs
+*.json
+*.log
