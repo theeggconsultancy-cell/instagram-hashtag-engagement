@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "workflow": {
+    "name": "Instagram Hashtag Engagement",
+    "schedule": "0 9 * * *",
+    "timezone": "UTC"
+  },
+  "hashtags": {
+    "max_unique_per_week": 30,
+    "rotation_strategy": "priority_weighted",
+    "daily_limit": 5
+  },
+  "content_filtering": {
+    "min_engagement_rate": 0.02,
+    "max_posts_per_day": 20,
+    "min_posts_per_day": 5,
+    "exclude_keywords": ["spam", "bot", "fake"],
+    "require_keywords": []
+  },
+  "scoring": {
+    "weights": {
+      "engagement_rate": 0.3,
+      "freshness_hours": 0.25,
+      "caption_relevance": 0.2,
+      "hashtag_priority": 0.15,
+      "media_type_preference": 0.1
+    }
+  },
+  "ai_comments": {
+    "provider": "openai",
+    "model": "gpt-3.5-turbo",
+    "suggestions_per_post": 3,
+    "max_length": 140,
+    "tone": "friendly_professional"
+  },
+  "delivery": {
+    "platform": "telegram",
+    "batch_size": 1,
+    "include_preview": true
+  },
+  "storage": {
+    "provider": "google_sheets",
+    "sheets": {
+      "hashtags": "hashtags_config",
+      "media_cache": "media_cache",
+      "sent_log": "engagement_log"
+    }
+  }
+}
